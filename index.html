@@ -497,7 +497,7 @@
                 <div class="feedback-form">
                     <h3>Contact Formulier:</h3>
 
-                    <form id="contactForm" action="https://formspree.io/f/mrgjlnpo" method="POST">
+                    <form id="my-form" action="https://formspree.io/f/mrgjlnpo" method="POST">
                         <div class="form-group">
                             <input type="email" name="email" required="" class="form-control" id="InputEmail"
                                    placeholder="Email">
@@ -548,19 +548,19 @@
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+          status.innerHTML = "Uw bericht is succesvol verzonden!";
           form.reset()
         } else {
           response.json().then(data => {
             if (Object.hasOwn(data, 'errors')) {
               status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
             } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
+              status.innerHTML = "Er was een probleem met het versturen van uw bericht."
             }
           })
         }
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.innerHTML = "Er was een probleem met het versturen van uw bericht."
       });
     }
     form.addEventListener("submit", handleSubmit)
