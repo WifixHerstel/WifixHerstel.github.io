@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wifix Herstel - Software en Hardware</title>
+    <title>Out of business</title>
     <link href="favicon.png" rel=icon>
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -30,129 +30,18 @@
             </div>
             <div class="col-md-9">
                 <div class="name-wrapper">
-                    <h1 class="name">WifixHerstel - Computer Vakmanschap Voorne-Putten</h1>
-                    <span>Software Development, Smarthome, Systeembeheer, Cloud Engineering</span>
+                    <h1 class="name">WifixHerstel - Bestaat niet meer</h1>
                 </div>
                 <p>
-                    WifixHerstel is een van de voorlopers op computer gebied. Wifixherstel houd zich bezig met <b>Software Development</b> voor bedrijven.<br>
-                    <b>Smart Home</b> consultancy en aanleg voor particulieren en bedrijven.<br>
-                    Freelance <b>Systeembeheer</b> voor bedrijven en WifixHerstel helpt bedrijven de <b>Cloud</b> in.<br>
-                    WifixHerstel maakt en onderhoud ook <b>Websites</b>.
-                    <br><br>
-                    Waar kunt u gebruik maken van de diensten van WifixHerstel? <b>Brielle, Oostvoorne, Rockanje, Hellevoetsluis, Heenvliet, Spijkenisse, Rozenburg</b> en omgeving <b>Voorne-Putten</b>
+                    Na 4 jaar werkzaamheden is WifixHerstel gestopt met zijn werkzaamheden.<br>
+                    Wij bedanken al onze relaties voor de fijne projecten die wij met hen hebben voltooid.<br>
+                    <br>
+                    WifixHerstel: Februari 2018 - Mei 2022
                 </p>
-                <p></p>
-                <h1><b><p>Computer? WifixHerstel.</p></b></h1>
-
-
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="personal-details">
-                            <strong>FEBRUARI, 2018</strong>
-                            <small>SINDS</small>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="personal-details">
-                            <strong>GEMEENTE VOORNE</strong>
-                            <small>LOCATIE</small>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="personal-details">
-                            <strong>BESTE VOOR UW BUDGET!</span></strong>
-                            <small>PRIJS?</small>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <h1><span><a href="mailto:vragen@wifixherstel.nl?subject=Contact Verzoek">Contact: Vragen @ WifixHerstel.nl</a></span></h1>
-            </div>
-        </div>
-    </div>
-</header>
-<section class="section-contact section-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                </div>
-            </div>
-
-            <div class="col-md-9">
-                <div class="feedback-form">
-                    <h3>Contact Formulier:</h3>
-
-                    <form id="my-form" action="https://formspree.io/f/mrgjlnpo" method="POST">
-                        <div class="form-group">
-                            <input type="email" name="email" required="" class="form-control" id="InputEmail"
-                                   placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="4" required="" name="message" id="message-text"
-                                      placeholder="Type uw bericht"></textarea>
-                        </div>
-                        
-                        <button type="verstuur" class="btn btn-primary">Submit</button>
-                        <p id="my-form-status"></p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="footer">
-    <div class="copyright-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copytext">Dit is een "mock" pagina, ter demonstratie van een website | Voorbeeld Door: WifixHerstel</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
 </div>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/scripts.js"></script>
-
-<script>
-    var form = document.getElementById("my-form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Uw bericht is succesvol verzonden!";
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Er was een probleem met het versturen van uw bericht."
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Er was een probleem met het versturen van uw bericht."
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-</script>
-
 </body>
 </html>
